@@ -7,6 +7,10 @@ console.log(typeof t);
 let g = null;
 console.log(typeof g);
 
+// Mетод eval()
+let aaa = '5 * 8 + 5 / 5'
+console.log(eval(aaa))
+
 /*
 Задача:
 Ваша часовая ставка 80$ и вы готовы работать не
@@ -113,3 +117,22 @@ switch(cifra){
     default:
         console.log('Вы робот!')
 };
+
+// Задача:
+// Пользователь хочет приобрести игру в магазине
+// 	Он может это сделать отлько если:
+// 	- Eго баланс больше 1000 (balance) 
+// 	или число бонусов больше 100 (bonusBalance)
+// 	- Он не забанен (isBanned)
+// 	- Игра не кулена (isExist)
+// 	- Игра в продаже (isSelling)
+// 	Напишите условие для покупки и выведите в консоль результат
+let balance = 100;
+let bonusBalance = 110;
+let isBanned = false;
+let isExist = false;
+let isSelling = true;
+console.log(`Игра куплена - ${(balance > 1000 || bonusBalance > 100) 
+    && !isBanned 
+    && !isExist 
+    && isSelling ? 'да' : 'нет'}`);

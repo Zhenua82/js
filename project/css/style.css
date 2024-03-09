@@ -1,0 +1,211 @@
+/* *{box-sizing: border-box;} */
+body{
+    font-family: Comfortaa;
+}
+.container{margin-top: 100px;}
+.add{background-color: #f5f7fa;}
+.context{background-color: #f3f6fd;}
+.logo{
+    width: 66px;
+    height: 71px;
+    justify-content: center;
+    margin: auto;
+    margin-top: 30px;
+}
+.cnop{
+    width: 46px;
+    height: 45px;
+    margin-top: 30px;
+    border: none;
+    border-radius: 14px;
+    background-color: white;
+    
+}
+.cnop:hover{
+    background-color: rgba(106, 106, 251, 1);
+    transition: background-color 5s;
+}
+body > div > div > div.col-4.col-sm-3.col-md-2.col-lg-2.col-xl-2.col-xxl-1.add > div.btn-add > button:hover{
+    background-color:rgb(215, 215, 255);
+}
+.cnop:hover img{
+    filter: brightness(0%) invert(100%);
+}
+.cnop_active{
+    background-color: rgba(106, 106, 251, 1);
+}
+.cnop_active img{
+    filter: brightness(0%) invert(100%);
+}
+.btn-add{
+    margin-bottom: 50px;
+
+}
+.btn-add button img{
+    margin-left: -6px;
+    margin-top: -1px;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    height: 15%;
+    margin-top: 45px;
+    margin-bottom: 20px;
+}
+.title{
+    margin-left: 5%;
+}
+.progress{
+    display: block;
+    height: 100%;
+    width: 20%;
+    background-color:#f3f6fd;
+    margin-right: 5%;
+}
+.text{
+    display: flex;
+    justify-content: space-between;
+}
+.polosa{
+    height: 8px;
+    border-radius: 8px;
+    background: linear-gradient(to right, rgb(54, 42, 228) 0%, rgb(54, 42, 228) 0%, #e4e4e4 0%);
+}
+.vvedtext{
+    display: flex;
+    align-items: center;
+    width: 74%;
+    height: 36px;
+    margin-left: 3%;
+    font-size: 16px;
+}
+.musor{
+    border:none;
+    background-color: white;
+    margin-right: 10px;
+}
+.musor:hover{
+    background: rgb(215, 215, 255);
+    border-radius: 5px;   
+}
+.dni{
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    height: 50px;
+    width: 90%;
+    margin: auto;
+    border-radius: 10px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.denj{
+    display: flex;
+    background-color: #f2f3f5;
+    width: 25%;
+    height: 100%;
+    border-radius:10px 0px 0px 10px;
+    border-right: 1px solid rgb(156, 155, 155);
+    align-items: center;
+    justify-content: center;
+}
+.poleinput{
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+}
+.gotovo{
+    border-radius: 8px;
+    color: blue;
+    background-color: rgb(217, 227, 253);
+    width: 19%;
+    border: none;
+    margin-right: 10px
+}
+.gotovo:hover{
+    background: rgb(202, 216, 252);
+}
+
+.inputdenj{
+    width: 74%;
+    height: 36px;
+    border: 1px solid rgb(156, 155, 155);
+    border-radius: 8px;
+    margin-left: 3%;
+    background-image:url(../img/Vector.svg);
+    background-position: 2% 50%;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding-left: 5%;
+}
+.empty{
+    border: 1px solid rgb(240, 8, 8) !important;
+}
+
+
+
+.popup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 46, 46, 0.5);
+    top: 0;
+}
+.popup_main{
+    background-color: #fff;
+    border-radius: 12px;
+    width: 30%;
+    height: 400px;
+    text-align: center;
+    position: relative;
+}
+.title_popup{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.crest{position: absolute;
+    /* top: 28%; right: 35.5%; */
+    top: 0px; right: 10px;
+    font-size: 30px;
+    color: rgba(106, 106, 251, 1);
+    cursor: pointer;
+}
+.text_popup{
+    display: flex;
+    justify-content: center;
+}
+.block_icon{
+    display: flex;
+    justify-content: center;
+}
+.block_icon > .cnop{
+    border: 1px rgba(106, 106, 251, 1) solid;
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+.css_popup{
+    width: 90%;
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid rgb(156, 155, 155);
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #8899a8;
+    padding-left: 20px;
+}
+
+.popup_main > .gotovo{
+    margin-top: 30px;
+    height: 50px;
+}
+.hide{
+    display: none;
+}
+

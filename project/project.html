@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- чтоб не было прокрутки -->
+    <meta name="robots" content="index, follow" />
+    <!-- для индексации страниц -->
+    <meta name="theme-color" content="#ffffff" />
+    <!-- для задания цвета темы (или фона) для браузера мобильных устройств. Этот тег позволяет веб-разработчикам указать основной цвет темы, который может быть использован браузером при отображении элементов пользовательского интерфейса, таких как адресная строка или заголовки в мобильных браузерах. -->
+    <meta name="description" content="Учебный проект по JS" />
+    <title>Блокнот привычек</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Шрифты: -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-4 col-sm-3 col-md-2 col-lg-2 col-xl-2 col-xxl-1 add">
+          <div class="logo">
+            <img src="img/logo.svg" alt="Logotip" />
+          </div>
+          <nav class="menu">
+            <!-- <div class="menu-element">
+              <button class="cnop cnop_active">
+                <img src="img/Dumbbell.svg" alt="гантели" />
+              </button>
+            </div>
+            <div class="menu-element">
+              <button class="cnop">
+                <img src="img/water.svg" alt="вода" />
+              </button>
+            </div>
+            <div class="menu-element">
+              <button class="cnop">
+                <img src="img/Group.svg" alt="еда" />
+              </button>
+            </div> -->
+          </nav>
+          <div class="btn-add" onclick="popup()">
+            <button class="cnop" >
+              <img src="img/btnadd.svg" alt="кнопка добавления" />
+            </button>
+          </div>
+        </div>
+        <div
+          class="col-8 col-sm-9 col-md-10 col-lg-10 col-xl-10 col-xxl-11 context">
+          <div class="head">
+            <div class="title">
+              <h1>Привычка</h1>
+            </div>
+            <div class="progress">
+              <div class="text">
+                <h6>Прогресс</h6>
+                <h6 id="pers">0%</h6>
+              </div>
+              <div class="polosa"></div>
+            </div>
+          </div>
+          <div class="block_dni">
+            <!-- <div class="dni">
+              <div class="denj">День</div>
+              <div class="poleinput">
+                <div class="vvedtext">peremennaj</div>
+                <button class="musor">
+                  <img src="img/shape.svg" alt="мусорка" />
+                </button>
+              </div>
+            </div> -->
+          </div>
+
+          <div class="dni">
+            <div class="denj">День 1</div>
+            <form class="poleinput" onsubmit="addDays(event)">
+              <input name="inputday" class="inputdenj" type="text" placeholder="Комментарий" />
+              <button class="gotovo" type="submit">Готово</button>
+            </form>
+            <!-- <div class="poleinput">
+              <input class="inputdenj" type="text" placeholder="Комментарий" />
+              <button class="gotovo">Готово</button>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup hide">
+      <div class="popup_main ">
+        <div class="title_popup"><h2>Новая привычка</h2></div>
+        <div class="crest" onclick="popup()">&times;</div>
+        <div class="text_popup"><h6>Иконка</h6></div>
+        <div class="block_icon">
+          <button class="cnop" onclick="setIcon(this, 'Dumbbell')">
+            <img src="img/Dumbbell.svg" alt="гантели" />
+          </button>
+          <button class="cnop cnop_active" onclick="setIcon(this, 'water')">
+            <img src="img/water.svg" alt="вода" />
+          </button>
+          <button class="cnop" onclick="setIcon(this, 'Group')">
+            <img src="img/Group.svg" alt="еда" />
+          </button>
+        </div>
+        <!-- <input type="text" class="first_popup css_popup" placeholder="Название" />
+        <input type="text" class="second_popup css_popup" placeholder="Цель" />
+        <button class="gotovo">Добавить</button> -->
+        <form onsubmit="popup_addbtn(event)">
+          <input type="text" name="first" class="first_popup css_popup" placeholder="Название" />
+          <input type="text" name="second" class="second_popup css_popup" placeholder="Цель" />
+          <input type="text" class="second_popup css_popup" name="icon" hidden 
+          placeholder="Иконка" value="Dumbbell" />
+          <button class="gotovo" type="submit">Добавить</button>
+          <!-- <button class="gotovo" type="submit" onclick="gotov(this)">Добавить</button> -->
+        </form>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

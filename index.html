@@ -6,10 +6,30 @@
     <meta name="robots" content="index, follow"> <!-- для индексации страниц -->
     <meta name="theme-color" content="#ffffff"> <!-- для задания цвета темы (или фона) для браузера мобильных устройств. Этот тег позволяет веб-разработчикам указать основной цвет темы, который может быть использован браузером при отображении элементов пользовательского интерфейса, таких как адресная строка или заголовки в мобильных браузерах. -->
     <title>Заголовок не должен быть коротким - оптимальная длина около 50-70 символов</title>
-    <script src="./app5.js"></script>
+    <link rel="stylesheet" href="./main.css">
 </head>
 <body>
     <h1>Js</h1>
+    <div class="inp">
+        <input type="text">
+        <button>Change</button>
+    </div>
+
+    <div class="dni">
+        <div class="denj">День 1</div>
+        <form class="poleinput" onsubmit="addDays(event)">
+          <input name="inputday" class="inputdenj" type="text" placeholder="Комментарий" />
+          <input name="exp" class="inputdenj" type="text" hidden placeholder="Комментарий" value="experiment" />
+          <button class="gotovo" type="submit" onclick="exper(this, 'XXX')">Готово</button>
+        </form>
+      </div>
     
+    <!-- <script src="./local_storage_json.js"></script> -->
+    <script src="./methody.js"></script>
+    <!-- <script src="./nachalo+tern_oper.js"></script> -->
+    <!-- <script src="./massive.js"></script> -->
+    <!-- <script src="./cikle.js"></script> -->
+    <!-- <script src="./string.js"></script> -->
+    <!-- <script src="./subject.js"></script> -->
 </body>
 </html>

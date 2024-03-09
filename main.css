@@ -1,0 +1,66 @@
+body {display: flex; flex-direction: column; 
+    background-color: black; color: white;}
+h1 {margin: auto;}
+.inp {margin: auto; margin-top: 20px;}
+input {width: 250px; height: 40px; border-radius: 10px; border-width: 0px; }
+button {width: 150px;
+    height: 46px; 
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+    border-width: 0px;
+}
+
+.dni{
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    height: 50px;
+    width: 90%;
+    margin: auto;
+    border-radius: 10px;
+    align-items: center;
+    margin-top: 30px;
+}
+.denj{
+    display: flex;
+    background-color: #f2f3f5;
+    width: 25%;
+    height: 100%;
+    border-radius:10px 0px 0px 10px;
+    border-right: 1px solid rgb(156, 155, 155);
+    align-items: center;
+    justify-content: center;
+}
+.poleinput{
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+}
+.gotovo{
+    border-radius: 8px;
+    color: blue;
+    background-color: rgb(217, 227, 253);
+    width: 19%;
+    border: none;
+    margin-right: 10px
+}
+.gotovo:hover{
+    background: rgb(202, 216, 252);
+}
+
+.inputdenj{
+    width: 74%;
+    height: 36px;
+    border: 1px solid rgb(156, 155, 155);
+    border-radius: 8px;
+    margin-left: 3%;
+    background-image:url(../img/Vector.svg);
+    background-position: 2% 50%;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding-left: 5%;
+}
+.empty{
+    border: 1px solid rgb(240, 8, 8);
+}
