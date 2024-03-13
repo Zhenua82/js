@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- чтоб не было прокрутки -->
+    <meta name="robots" content="index, follow" />
+    <!-- для индексации страниц -->
+    <meta name="theme-color" content="#ffffff" />
+    <!-- для задания цвета темы (или фона) для браузера мобильных устройств. Этот тег позволяет веб-разработчикам указать основной цвет темы, который может быть использован браузером при отображении элементов пользовательского интерфейса, таких как адресная строка или заголовки в мобильных браузерах. -->
+    <meta name="description" content="Учебный проект по JS" />
+    <title>Блокнот привычек</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Шрифты: -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bodyproject">
+    
+    <div class="container text-center containerproject">
+      <div class="row">
+        <div class="col-1 col-xs-1 col-sm-1 col-md-1 col-lg-1 col-xl-1 col-xxl-1 addproject">
+          <div class="logoproject">
+            <img src="img/it2.svg" alt="Logotip" />
+          </div>
+          <nav class="menuproject">
+            <!-- <div class="menu-element">
+              <button class="cnopproject cnopproject_active">
+                <img src="img/Dumbbell.svg" alt="гантели" />
+              </button>
+            </div>
+            <div class="menu-element">
+              <button class="cnopproject">
+                <img src="img/water.svg" alt="вода" />
+              </button>
+            </div>
+            <div class="menu-element">
+              <button class="cnopproject">
+                <img src="img/Group.svg" alt="еда" />
+              </button>
+            </div> -->
+          </nav>
+          <div class="btn-addproject" onclick="popupproject()">
+            <button class="cnopproject" >
+              <img src="img/btnadd.svg" alt="кнопка добавления" />
+            </button>
+          </div>
+        </div>
+        <div
+          class="col-11 col-xs-11 col-sm-11 col-md-11 col-lg-11 col-xl-11 col-xxl-11 contextproject">
+          <h1 style="margin-top: 40px;">Навыки в IT</h1>
+          <div class="headproject">
+            <div class="titleproject">
+              <h2>Навык</h2>
+            </div>
+            <div class="progressproject">
+              <div class="textproject">
+                <h6>Прогресс</h6>
+                <h6 id="pers">0%</h6>
+              </div>
+              <div class="polosa"></div>
+            </div>
+          </div>
+          <div class="block_dni">
+            <!-- <div class="dniproject">
+              <div class="denjproject">День</div>
+              <div class="poleinputproject">
+                <div class="vvedtext">peremennaj</div>
+                <button class="musorproject">
+                  <img src="img/shape.svg" alt="мусорка" />
+                </button>
+              </div>
+            </div> -->
+          </div>
+
+          <div class="dniproject dniproject_niz">
+            <div class="denjproject">Месяц 1</div>
+            <form class="poleinputproject" onsubmit="addDays(event)">
+              <input name="inputday" class="inputdenjproject" type="text" placeholder="Комментарий" />
+              <button class="gotovoproject" type="submit">Готово</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popupproject hide">
+      <div class="popupproject_main ">
+        <div class="titleproject_popupproject"><h2>Перечень навыков:</h2></div>
+        <div class="crestproject" onclick="popupproject()">&times;</div>
+        <div class="textproject_popupproject"><h6>Иконка</h6></div>
+        <div class="block_iconproject">
+          <button class="cnopproject cnopproject_active" onclick="setIcon(this, 'java_script2')" onmouseover="fierHover(this)">
+            <img src="img/java_script2.svg" alt="JavaScript" />
+          </button>
+          <button class="cnopproject" onclick="setIcon(this, 'python')" onmouseover="fierHover(this)">
+            <img src="img/python.svg" alt="Python" />
+          </button>
+          <button class="cnopproject" onclick="setIcon(this, 'css2')" onmouseover="fierHover(this)">
+            <img src="img/css2.svg" alt="Css" />
+          </button>
+          <button class="cnopproject" onclick="setIcon(this, 'html2')" onmouseover="fierHover(this)">
+            <img src="img/html2.svg" alt="html" />
+          </button>
+          <button class="cnopproject" onclick="setIcon(this, 'php')" onmouseover="fierHover(this)">
+            <img src="img/php.svg" alt="php" />
+          </button>
+          <button class="cnopproject" onclick="setIcon(this, 'sql2')" onmouseover="fierHover(this)">
+            <img src="img/sql2.svg" alt="sql" />
+          </button>
+          <button class="cnopproject" onclick="setIcon(this, 'wordpress')" onmouseover="fierHover(this)">
+            <img src="img/wordpress.svg" alt="wordpress" />
+          </button>
+          <button class="cnopproject" onclick="setIcon(this, 'docker')" onmouseover="fierHover(this)">
+            <img src="img/docker.svg" alt="docker" />
+          </button>
+          <button class="cnopproject" onclick="setIcon(this, 'git')" onmouseover="fierHover(this)">
+            <img src="img/git.svg" alt="git" />
+          </button>
+          <button class="cnopproject" onclick="setIcon(this, 'linux')" onmouseover="fierHover(this)">
+            <img src="img/linux.svg" alt="linux" />
+          </button>
+          <!-- <button class="cnopproject" onclick="setIcon(this, 'fier')">
+            <img src="img/fier.gif" alt="fier" />
+          </button> -->
+        </div>
+        <form onsubmit="popup_addbtn(event)">
+          <input type="text" name="first" class="first_popupproject css_popupproject" placeholder="Название навыка" />
+          <input type="text" name="second" class="second_popupproject css_popupproject" placeholder="Цель (в месяцах)" />
+          <input type="text" class="second_popupproject css_popupproject" name="icon" hidden 
+          placeholder="Иконка" value="Dumbbell" />
+          <button class="gotovoproject" type="submit">Добавить</button>
+        </form>
+      </div>
+    </div>
+    <div class="pechat2project">Учебная <br>работа</div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

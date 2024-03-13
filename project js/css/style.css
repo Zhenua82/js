@@ -1,0 +1,436 @@
+/* *{box-sizing: border-box;} */
+.bodyproject{
+    font-family: Comfortaa;
+}
+.containerproject{margin-top: 100px;}
+.addproject{
+    background-color: #f5f7fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contextproject{background-color: #f3f6fd;}
+
+.logoproject{
+    width: 100%;
+    height: 71px;
+    /* width: 66px;
+    height: 71px; */
+    /* justify-content: center;
+    margin: auto; */
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.menuproject{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cnopproject{
+    width: 46px;
+    height: 45px;
+    margin-top: 30px;
+    border: none;
+    border-radius: 14px;
+    background-color: white;
+    position: relative;
+    
+}
+
+/* @keyframes increaseSize {
+    0% {
+      background-size: 30%;
+      background-position: bottom;
+    }
+    100% {
+      background-size: 150%;
+      background-position: top 100%;
+    }
+  } */
+
+/* .cnopproject:hover{
+    background-color: rgba(106, 106, 251, 1);
+    background: url(../img/fier.gif) no-repeat;
+    background-size: 30%;
+    background-position: bottom;
+    animation: increaseSize 5s ease-in-out forwards;
+    transition: background-color 5s;
+} */
+body > div > div > div.col-1.col-xs-1.col-sm-1.col-md-1.col-lg-1.col-xl-1.col-xxl-1.addproject > div.btn-addproject > button:hover{
+    background-color:rgb(215, 215, 255);
+}
+/* .cnopproject:hover img{
+    filter: brightness(0%) invert(10%);
+} */
+.cnopproject_active{
+    /* background-color: rgba(106, 106, 251, 1); */
+    background-color: #c2d3fa;
+    /* background: url(../img/fier.gif) no-repeat;
+    background-size: 160%;
+    background-position: bottom right 35%; */
+}
+/* .cnopproject_active img{
+    filter: brightness(0%) invert(100%);  
+} */
+.fierproject{
+    position: absolute;   
+}
+.fierproject img{
+    width: 55px;
+    margin-top: -100px;
+    margin-left: -13px;
+}
+@keyframes increaseSizehover {
+    0% {
+      width: 14px;
+      margin-top: -40px;
+        margin-left: 25px;
+    }
+    100% {
+      width: 44px;
+      margin-top: -78px;
+        margin-left: -5px;
+    }
+  }
+.fierprojecthover{
+    position: absolute;   
+}
+.fierprojecthover img{
+    animation: increaseSizehover 5s ease-in-out forwards;
+}
+.btn-addproject{
+    margin-bottom: 50px;
+}
+.btn-addproject button img{
+    margin-left: -6px;
+    margin-top: -1px;
+}
+.headproject{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+.titleproject{
+    margin-left: 5%;
+}
+.progressproject{
+    display: block;
+    height: 50px;
+    width: 20%;
+    background-color:#f3f6fd;
+    margin-right: 5%;
+}
+.textproject{
+    display: flex;
+    justify-content: space-between;
+}
+.polosa{
+    height: 8px;
+    border-radius: 8px;
+    background: linear-gradient(to right, rgb(54, 42, 228) 0%, rgb(54, 42, 228) 0%, #e4e4e4 0%);
+}
+.vvedtext{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 36px;
+    /* margin-left: 3%; */
+    padding-left: 10px;
+    font-size: 16px;
+    border: none;
+    resize: none;
+}
+.musorproject{
+    border:none;
+    background-color: white;
+    margin-right: 10px;
+}
+.musorproject:hover{
+    background: rgb(215, 215, 255);
+    border-radius: 5px;   
+}
+.dniproject{
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    height: 50px;
+    width: 90%;
+    margin: auto;
+    border-radius: 10px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.denjproject{
+    display: flex;
+    background-color: #f2f3f5;
+    width: 25%;
+    height: 100%;
+    border-radius:10px 0px 0px 10px;
+    border-right: 1px solid rgb(156, 155, 155);
+    align-items: center;
+    justify-content: center;
+}
+.poleinputproject{
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+}
+.gotovoproject{
+    border-radius: 8px;
+    color: blue;
+    background-color: rgb(217, 227, 253);
+    width: 19%;
+    border: none;
+    margin-right: 10px
+}
+.gotovoproject:hover{
+    background: rgb(202, 216, 252);
+}
+
+.inputdenjproject{
+    width: 74%;
+    height: 36px;
+    border: 1px solid rgb(156, 155, 155);
+    border-radius: 8px;
+    margin-left: 3%;
+    background-image:url(../img/Vector.svg);
+    background-position: 2% 50%;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding-left: 5%;
+}
+.emptyproject{
+    border: 1px solid rgb(240, 8, 8) !important;
+}
+
+
+
+.popupproject{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 46, 46, 0.5);
+    top: 0;
+}
+.popupproject_main{
+    background-color: #fff;
+    border-radius: 12px;
+    width: 30%;
+    /* height: 400px; */
+    height: 80%;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.titleproject_popupproject{
+    display: flex;
+    justify-content: center;
+    /* margin-top: -15%; */
+    /* margin-top: 20px; */
+}
+.crestproject{position: absolute;
+    /* top: 28%; right: 35.5%; */
+    top: 0px; right: 10px;
+    font-size: 30px;
+    color: rgba(106, 106, 251, 1);
+    cursor: pointer;
+    z-index: 3;
+}
+.textproject_popupproject{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+.block_iconproject{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 60%;
+    margin-bottom: 3%;
+}
+.block_iconproject > .cnopproject{
+    border: 1px rgba(106, 106, 251, 1) solid;
+    margin-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+.block_iconproject > .cnopproject:hover{
+    border: 1px rgb(248, 76, 8) solid;
+    transition: border 5s;
+}
+.block_iconproject > .cnopproject_active{
+    border: 1px rgb(248, 76, 8) solid;
+}
+.css_popupproject{
+    width: 90%;
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid rgb(156, 155, 155);
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #8899a8;
+    padding-left: 20px;
+}
+
+.popupproject_main > form > .gotovoproject{
+    margin-top: 3%;
+    height: 40px;
+    width: 100px;
+}
+.hide{
+    display: none;
+}
+
+.pechat2project { 
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(30deg);
+    width: 240px;
+    height: 100px;
+    color: red;
+	border: 2px solid red;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) rotate(30deg);
+}
+
+@media only screen and (max-width: 1832px) {
+    .titleproject_popupproject{
+        margin-top: 30px;
+    }
+    .popupproject_main{
+        justify-content: flex-start;
+        height: 90%;   
+    }
+    .block_iconproject{
+        width: 90%;
+        margin-bottom: 3%;
+    }
+}
+@media only screen and (max-width: 991px) {
+    .inputdenjproject{
+        padding-left: 7%;
+    }
+    .logoproject{
+        width: 160%;
+        height: 61px;
+        margin-bottom: 0px;
+    }
+    .popupproject_main{
+        width: 60%;  
+    }
+}
+@media only screen and (max-width: 768px) {
+    .pechat2project { color: red}
+    .inputdenjproject{
+        padding-left: 10%;
+    }
+    .logoproject{
+        width: 260%;
+        margin-left: 20px;
+        z-index: 2;
+    }
+    .cnopproject{
+        margin-left: 10px;
+    }
+    form.poleinputproject{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .inputdenjproject{
+        width: 100%;
+        margin-top: 35px;
+        margin-left: 0px;
+    }
+    .gotovoproject{
+        width: 100px;
+        margin-right: 0px
+    }
+}
+@media only screen and (max-width: 576px) {
+    .cnopproject{
+        width: 36px;
+        height: 35px;
+    }
+    .btn-addproject > .cnopproject img{
+        width: 36px;
+        height: 35px;
+    }
+    .logoproject{
+        width: 60px;
+        margin-bottom: 20px;
+        margin-left: 32px;
+        z-index: 2;
+    }
+    .headproject{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+    .titleproject{
+        margin-left: 0px;
+    }
+    .progressproject{
+        margin-right: 0px;
+    }
+    .textproject{
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+    .denjproject{
+        font-size: 13px;
+    }
+    .vvedtext{
+        font-size: 12px;
+    }
+    .musorproject{
+        width: 13px;
+    }
+    .musorproject img{
+        width: 13px;
+    }
+    .pechat2project { 
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: rotate(30deg);
+        width: 240px;
+        height: 100px;
+        color: red;
+        border: 2px solid red;
+        position: fixed;
+        top: 0;
+        left: 30%;
+        transform: translateX(-50%) rotate(30deg);
+    }
+    .dniproject_niz{
+        margin-top: 70px;
+    }
+    .block_dni{margin-top: 80px;}
+    .inputdenjproject{margin-top: 85px;}
+    .dniproject > form > .gotovoproject{
+        margin-top: 50px;
+    }
+}
