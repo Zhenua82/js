@@ -259,7 +259,7 @@ console.log(some(arr, 20));
 // Метод some:
 console.log(arr.some(el => el === 20));
 
-// Методы flat и flatMap:
+// Методы flat (раскрывает массив в массиве, а число указывает глубину) и flatMap:
 const pprices = [[100, 200], [120, 100], [200, [450, 9]]];
 console.log(pprices.flat());
 console.log(pprices.flat(2));

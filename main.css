@@ -55,7 +55,7 @@ button {width: 150px;
     border: 1px solid rgb(156, 155, 155);
     border-radius: 8px;
     margin-left: 3%;
-    background-image:url(../img/Vector.svg);
+    background-image:url(./project/img/Vector.svg);
     background-position: 2% 50%;
     background-repeat: no-repeat;
     font-size: 16px;
