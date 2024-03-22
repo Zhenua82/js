@@ -35,14 +35,14 @@ console.log(massive);
 
 console.log(massive.indexOf('Максим'));
 console.log(massive.indexOf('Марк'));
-console.log(massive.includes('Максим'));
+console.log(massive.includes('Максим')); // Проверка имеется ли в массиве элемент 'Максим'
 console.log(massive.includes('Валя') ? 'Доступ есть' : 'Хрен');
 
-console.log(massive.slice(2, 4));
+console.log(massive.slice(2, 4)); //Выбираем из массива элементы начиная со 2 индекса до 4, не включая последний
 console.log(massive);
 console.log(massive.slice(-3));
 
-console.log(massive.splice(4, 3));
+console.log(massive.splice(4, 3));// Удаление 3 элементов начиная с 4 индекса
 console.log(massive.splice(-2));
 console.log(massive);
 
@@ -183,7 +183,7 @@ console.log(massiv)
 const upThree = massiv.filter((element, i) => {
     return element > 3 && i < 2;
 })
-console.log(upThree)
+console.log(upThree)// При этом сам massiv - не изменяется и остается прежним
 
 // Фильтрация и преобразование в массивах (filter и map):
 console.log(massiv)
@@ -257,7 +257,7 @@ function some(arrr, nummb){
 console.log(some(arr, 20));
 
 // Метод some:
-console.log(arr.some(el => el === 20));
+console.log(arr.some(el => el === 20));//То же что и find, только выводит true или false
 
 // Методы flat (раскрывает массив в массиве, а число указывает глубину) и flatMap:
 const pprices = [[100, 200], [120, 100], [200, [450, 9]]];
