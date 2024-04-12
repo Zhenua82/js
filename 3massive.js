@@ -15,7 +15,7 @@ console.log(massive);
 
 massive.push('Никита');
 console.log(massive);
-console.log(massive.push('Никита'));
+console.log(massive.push('Никита'));//Добавление в массив
 console.log(massive);
 
 massive.unshift('Филя')
@@ -212,14 +212,14 @@ console.log(massiv);
 const finalBalance = massiv.reduce((prev, elem, i) => {
     console.log(`Цикл ${i}: ${prev}`);
     return prev += elem;
-})
+},0)
 console.log(finalBalance);
 
 const minim = massiv.reduce((prev, elem) =>{
     if (elem < prev) {
         return prev = elem
     } else {return prev}
-})
+},0)
 console.log(minim);
 
 // Задача:

@@ -367,3 +367,19 @@ console.log(company.nameComp());
 console.log(company.ceo.nameCeo());
 console.log(company.employees[0].nameEmpl());
 console.log(company.employees.map(elem => elem.nameEmpl()));
+
+//Преобразование объекта в строку(массив):
+const cchel = {
+    name: 'Ura',
+    suname: 'Ivanov',
+    age: 32,
+    fullName: function(){
+        return this.name + ' ' + this.suname
+    },
+    pens() {
+        this.age >= 65? console.log('pens') : console.log('no pens')
+    }
+};
+let mmm = new Map(Object.entries(cchel))
+let mm = [...mmm].flat()
+console.log(mm)

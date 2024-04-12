@@ -47,6 +47,15 @@
 	background-color: rgba(255, 255, 255, 0.05);
 }
 
-
+b{
+	background-color: #fff;
+	margin-top: 10px;
+	width: 70%;
+	height: 40px;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 
 
