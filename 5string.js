@@ -5,7 +5,7 @@ console.log(userName.charAt(0) + userName.charAt(1));
 console.log(userName.length);
 console.log(userName.indexOf('Ва'));
 console.log(userName.lastIndexOf('а'));
-console.log(userName.includes('уп'));
+console.log(userName.includes('уп'));//Поиск 'уп' в строке userName
 console.log(userName.startsWith('🍒'));
 console.log(userName.endsWith('а'));
 console.log(userName.indexOf('упе'));
